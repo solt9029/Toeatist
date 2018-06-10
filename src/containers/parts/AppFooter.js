@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container } from 'reactstrap';
-import styles from './AppFooter.css';
+import styles from '../../styles/AppFooter.css';
 
 export default class AppFooter extends Component {
   render() {

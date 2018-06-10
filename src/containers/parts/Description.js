@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import styles from './Description.css';
+import styles from '../../styles/Description.css';
 
 export default class Description extends Component {
   render() {

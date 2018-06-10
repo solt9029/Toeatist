@@ -1,7 +1,7 @@
 import React from 'react';
 import { Jumbotron, Container, Button } from 'reactstrap';
 import { connect } from 'react-redux';
-import styles from './AppJumbotron.css';
+import styles from '../../styles/AppJumbotron.css';
 import { login } from '../../actions/user';
 
 const AppJumbotron = (props) => (
