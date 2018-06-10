@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Link, Redirect } from 'react-router-dom';
 import ItemIndexPage from './ItemIndexPage';
 import IndexPage from './IndexPage';
+import ItemCreatePage from './ItemCreatePage';
 import SwitchRoute from './SwitchRoute';
 import UserOnlyRoute from './UserOnlyRoute';
 import { connect } from 'react-redux';
@@ -13,12 +14,16 @@ class App extends Component {
     this.props.onAuthStateChanged();
   }
   render() {
+    if (this.props.loading) {
+      return 'loading...';
+    }
     return (
       <div className="App">
         <Switch>
           <SwitchRoute exact path="/" userComponent={ItemIndexPage} guestComponent={IndexPage} />
-          <UserOnlyRoute path="/item" component={ItemIndexPage} />
-          <UserOnlyRoute path="/item/index" component={ItemIndexPage} />
+          <UserOnlyRoute exact path="/item" component={ItemIndexPage} />
+          <UserOnlyRoute exact path="/item/index" component={ItemIndexPage} />
+          <UserOnlyRoute exact path="/item/create" component={ItemCreatePage} />
           <Redirect to="/" />
         </Switch>
       </div>
@@ -27,6 +32,7 @@ class App extends Component {
 }
 
 const mapStateToProps = (state) => ({
+  loading: state.user.loading
 });
 
 const mapDispatchToProps = dispatch => ({

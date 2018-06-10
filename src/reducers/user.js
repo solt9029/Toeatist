@@ -4,7 +4,8 @@ const initialState = {
   phoneNumber: null,
   photoURL: null,
   providerid: null,
-  uid: null
+  uid: null,
+  loading: true
 };
 
 export default (state = initialState, action) => {
@@ -17,11 +18,15 @@ export default (state = initialState, action) => {
         phoneNumber: action.payload.phoneNumber,
         photoURL: action.payload.photoURL,
         providerId: action.payload.providerId,
-        uid: action.payload.uid
+        uid: action.payload.uid,
+        loading: false
       }
     
     case 'END_LOGOUT':
-      return initialState;
+      return {
+        ...initialState,
+        loading: false
+      };
 
     default:
       return state;

@@ -36,10 +36,11 @@ export const logout = () => {
 export const onAuthStateChanged = () => {
   return (dispatch) => {
     auth.onAuthStateChanged((user) => {
-      if (!user) {
-        return;
+      if (user) {
+        dispatch(endLogin(user));
+      } else {
+        dispatch(endLogout());
       }
-      dispatch(endLogin(user));
     });
   };
 };
