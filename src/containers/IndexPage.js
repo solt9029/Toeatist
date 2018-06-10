@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { login } from '../actions/user';
 import GuestNavbar from './GuestNavbar';
 import AppJumbotron from './AppJumbotron';
+import AppFooter from './AppFooter';
 
 class IndexPage extends React.Component {
   render() {
@@ -10,6 +11,7 @@ class IndexPage extends React.Component {
       <div>
         <GuestNavbar />
         <AppJumbotron />
+        <AppFooter />
       </div>
     )
   }

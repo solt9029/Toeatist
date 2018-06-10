@@ -1,5 +1,6 @@
 import React from 'react';
 import UserNavbar from './UserNavbar';
+import AppFooter from './AppFooter';
 import { connect } from 'react-redux';
 import { logout } from '../actions/user';
 import { onValue } from '../actions/item';
@@ -18,6 +19,7 @@ class ItemIndexPage extends React.Component {
         {this.props.item.list.map((item) => {
           return <div>{item.content}</div>;
         })}
+        <AppFooter />
       </div>
     )
   }
