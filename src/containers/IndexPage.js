@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import GuestOnly from '../components/GuestOnly';
+import IndexPage from '../components/IndexPage';
 import { login } from '../actions/user';
 
 const mapStateToProps = (state) => ({});
@@ -10,4 +10,4 @@ const mapDispatchToProps = dispatch => ({
   }
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(GuestOnly);
+export default connect(mapStateToProps, mapDispatchToProps)(IndexPage);

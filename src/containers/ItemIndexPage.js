@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import UserOnly from '../components/UserOnly';
+import ItemIndexPage from '../components/ItemIndexPage';
 import { logout } from '../actions/user';
 import { onValue } from '../actions/item';
 
@@ -17,4 +17,4 @@ const mapDispatchToProps = dispatch => ({
   }
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(UserOnly);
+export default connect(mapStateToProps, mapDispatchToProps)(ItemIndexPage);
