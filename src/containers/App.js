@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Link, Redirect } from 'react-router-dom';
+import { Switch, Redirect } from 'react-router-dom';
 import ItemIndexPage from './pages/ItemIndexPage';
 import IndexPage from './pages/IndexPage';
 import ItemCreatePage from './pages/ItemCreatePage';

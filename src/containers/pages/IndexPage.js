@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { login } from '../../actions/user';
 import AppNavbar from '../parts/AppNavbar';
 import AppJumbotron from '../parts/AppJumbotron';
 import AppFooter from '../parts/AppFooter';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Container, NavbarBrand, NavbarToggler, Button, Collapse } from 'reactstrap';
+import { Navbar, Container, NavbarBrand, Button } from 'reactstrap';
 import { connect } from 'react-redux';
 import { logout } from '../../actions/user';
 

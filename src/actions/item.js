@@ -1,4 +1,4 @@
-import firebase, { auth, provider } from '../firebase';
+import firebase from '../firebase';
 
 export const addList = list => ({
   type: 'ADD_LIST',
