@@ -1,28 +1,28 @@
-.jumbotron{
+:local(.jumbotron) {
   background:linear-gradient(45deg, rgba(34, 139, 66, 0.9), rgba(20, 133, 5, 0.8)), url("/images/header.jpg") center no-repeat;
   background-size: cover;
   text-align: center;
 }
 
-.title {
+:local(.title) {
   color: #fff;
   font-size: 3.5rem;
   margin-top: 70px;
   margin-bottom: 50px;
 }
 
-.text {
+:local(.text) {
   color: #fff;
   margin-top: 50px;
   margin-bottom: 40px;
 }
 
-.login {
+:local(.button) {
   color: #fff;
   background-color: rgba(253, 155, 26, 0.93);
   margin-bottom: 40px;
 }
 
-.login:hover {
+:local(.button:hover) {
   background-color: rgba(231, 142, 25, 0.93);
 }

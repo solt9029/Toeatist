@@ -1,0 +1,12 @@
+:local(.title) {
+  font-weight: bold;
+}
+
+:local(.row) {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+:local(.img) {
+  width: 100%;
+}

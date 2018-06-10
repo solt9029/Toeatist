@@ -1,19 +1,19 @@
 import React from 'react';
 import { Jumbotron, Container, Button } from 'reactstrap';
 import { connect } from 'react-redux';
-import './AppJumbotron.css';
+import styles from './AppJumbotron.css';
 import { login } from '../../actions/user';
 
 const AppJumbotron = (props) => (
-  <Jumbotron>
+  <Jumbotron className={styles.jumbotron}>
     <Container>
-      <h1 className="title">賞味期限を管理しよう。</h1>
-      <div className="text">
+      <h1 className={styles.title}>賞味期限を管理しよう。</h1>
+      <div className={styles.text}>
         <p>あのお菓子っていつまでに食べればいいんだっけ？あの卵ってまだ食べられるかな？</p>
         <p>Toeatistで賞味期限を管理しよう。写真を撮ってお手軽に登録＆削除。</p>
       </div>
       <div>
-        <button className="btn btn-lg login" onClick={() => props.login()}>Googleアカウントでログイン</button>
+        <button className={`btn btn-lg ${styles.button}`} onClick={() => props.login()}>Googleアカウントでログイン</button>
       </div>
     </Container>
   </Jumbotron>

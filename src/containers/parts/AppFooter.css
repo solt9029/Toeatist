@@ -1,11 +1,11 @@
-.footer {
+:local(.footer) {
   text-align: center;
   padding: 10px;
   font-size: 0.75rem;
+  margin-top: 50px;
   background:linear-gradient(45deg, rgba(34, 139, 66, 0.9), rgba(20, 133, 5, 0.8)), center no-repeat;
-  margin-top: 100px;
 }
 
-.copyright{
+:local(.copyright) {
   color:#fff;
 }
