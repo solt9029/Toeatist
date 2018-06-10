@@ -1,6 +1,17 @@
+import React from 'react';
 import { connect } from 'react-redux';
-import IndexPage from '../components/IndexPage';
 import { login } from '../actions/user';
+
+class IndexPage extends React.Component {
+  render() {
+    return (
+      <div>
+        <h2>IndexPage</h2>
+        <button onClick={() => this.props.login()}>login</button>
+      </div>
+    )
+  }
+}
 
 const mapStateToProps = (state) => ({});
 

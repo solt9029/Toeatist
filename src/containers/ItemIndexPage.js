@@ -1,7 +1,27 @@
+import React from 'react';
+import UserNavbar from '../containers/UserNavbar';
 import { connect } from 'react-redux';
-import ItemIndexPage from '../components/ItemIndexPage';
 import { logout } from '../actions/user';
 import { onValue } from '../actions/item';
+
+class ItemIndexPage extends React.Component {
+  componentDidMount() {
+    this.props.onValue();
+  }
+  render() {
+    return (
+      <div>
+        <UserNavbar />
+        <h2>ItemIndexPage</h2>
+        { this.props.user.displayName }
+        <button onClick={() => this.props.logout()}>logout</button>
+        {this.props.item.list.map((item) => {
+          return <div>{item.content}</div>;
+        })}
+      </div>
+    )
+  }
+}
 
 const mapStateToProps = (state) => ({
   user: state.user,

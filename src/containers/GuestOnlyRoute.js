@@ -1,5 +1,14 @@
+import React from 'react';  
+import { Redirect, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
-import GuestOnlyRoute from '../components/GuestOnlyRoute';
+
+const GuestOnlyRoute = ({ component: Component, user, ...rest }) => {
+  return (
+    <Route {...rest} render={props => (
+      user.uid ? <Redirect to="/home" /> : <Component {...props} />
+    )} />
+  );
+};
 
 const mapStateToProps = (state) => ({
   user: state.user

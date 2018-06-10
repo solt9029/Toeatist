@@ -1,5 +1,14 @@
+import React from 'react';  
+import { Redirect, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
-import SwitchRoute from '../components/SwitchRoute';
+
+const SwitchRoute = ({ userComponent: UserComponent, guestComponent: GuestComponent, user, ...rest }) => {
+  return (
+    <Route {...rest} render={props => (
+      user.uid ? <UserComponent {...props} /> : <GuestComponent {...props} />
+    )} />
+  );
+};
 
 const mapStateToProps = (state) => ({
   user: state.user
