@@ -1,9 +1,9 @@
 import React from 'react';
-import AppNavbar from './AppNavbar';
-import AppFooter from './AppFooter';
+import AppNavbar from '../parts/AppNavbar';
+import AppFooter from '../parts/AppFooter';
 import { connect } from 'react-redux';
-import { logout } from '../actions/user';
-import { onValue } from '../actions/item';
+import { logout } from '../../actions/user';
+import { onValue } from '../../actions/item';
 
 class ItemIndexPage extends React.Component {
   componentDidMount() {

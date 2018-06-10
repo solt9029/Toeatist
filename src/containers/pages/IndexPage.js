@@ -1,10 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { login } from '../actions/user';
-import AppNavbar from './AppNavbar';
-import AppJumbotron from './AppJumbotron';
-import AppFooter from './AppFooter';
-import Description from './Description';
+import { login } from '../../actions/user';
+import AppNavbar from '../parts/AppNavbar';
+import AppJumbotron from '../parts/AppJumbotron';
+import AppFooter from '../parts/AppFooter';
+import Description from '../parts/Description';
 
 class IndexPage extends React.Component {
   render() {

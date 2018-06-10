@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, Container, NavbarBrand, NavbarToggler, Button, Collapse } from 'reactstrap';
 import { connect } from 'react-redux';
-import { logout } from '../actions/user';
+import { logout } from '../../actions/user';
 
 const AppNavbar = (props) => {
   let createButton = () => {

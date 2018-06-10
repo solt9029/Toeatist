@@ -2,7 +2,7 @@ import React from 'react';
 import { Jumbotron, Container, Button } from 'reactstrap';
 import { connect } from 'react-redux';
 import './AppJumbotron.css';
-import { login } from '../actions/user';
+import { login } from '../../actions/user';
 
 const AppJumbotron = (props) => (
   <Jumbotron>

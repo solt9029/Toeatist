@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import AppNavbar from './AppNavbar';
-import AppFooter from './AppFooter';
+import AppNavbar from '../parts/AppNavbar';
+import AppFooter from '../parts/AppFooter';
 
 class ItemCreatePage extends React.Component {
   render() {

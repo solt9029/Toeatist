@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Switch, Link, Redirect } from 'react-router-dom';
-import ItemIndexPage from './ItemIndexPage';
-import IndexPage from './IndexPage';
-import ItemCreatePage from './ItemCreatePage';
-import SwitchRoute from './SwitchRoute';
-import UserOnlyRoute from './UserOnlyRoute';
+import ItemIndexPage from './pages/ItemIndexPage';
+import IndexPage from './pages/IndexPage';
+import ItemCreatePage from './pages/ItemCreatePage';
+import SwitchRoute from './routes/SwitchRoute';
+import UserOnlyRoute from './routes/UserOnlyRoute';
 import { connect } from 'react-redux';
 import { onAuthStateChanged } from '../actions/user';
 import { withRouter } from 'react-router-dom';
