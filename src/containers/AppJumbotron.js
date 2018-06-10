@@ -13,7 +13,7 @@ const AppJumbotron = (props) => (
         <p>Toeatistで賞味期限を管理しよう。写真を撮ってお手軽に登録＆削除。</p>
       </div>
       <div>
-        <Button color="warning" size="lg" className="login" onClick={() => props.login()}>Googleアカウントでログイン</Button>
+        <button className="btn btn-lg login" onClick={() => props.login()}>Googleアカウントでログイン</button>
       </div>
     </Container>
   </Jumbotron>
