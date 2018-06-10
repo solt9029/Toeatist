@@ -4,6 +4,7 @@ import { login } from '../actions/user';
 import GuestNavbar from './GuestNavbar';
 import AppJumbotron from './AppJumbotron';
 import AppFooter from './AppFooter';
+import Description from './Description';
 
 class IndexPage extends React.Component {
   render() {
@@ -11,6 +12,7 @@ class IndexPage extends React.Component {
       <div>
         <GuestNavbar />
         <AppJumbotron />
+        <Description />
         <AppFooter />
       </div>
     )
