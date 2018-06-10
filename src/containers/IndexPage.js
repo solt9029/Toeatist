@@ -1,11 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { login } from '../actions/user';
+import GuestNavbar from './GuestNavbar';
 
 class IndexPage extends React.Component {
   render() {
     return (
       <div>
+        <GuestNavbar />
         <h2>IndexPage</h2>
         <button onClick={() => this.props.login()}>login</button>
       </div>

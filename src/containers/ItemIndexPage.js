@@ -1,5 +1,5 @@
 import React from 'react';
-import UserNavbar from '../containers/UserNavbar';
+import UserNavbar from './UserNavbar';
 import { connect } from 'react-redux';
 import { logout } from '../actions/user';
 import { onValue } from '../actions/item';
