@@ -1,5 +1,5 @@
 import React from 'react';
-import UserNavbar from './UserNavbar';
+import AppNavbar from './AppNavbar';
 import AppFooter from './AppFooter';
 import { connect } from 'react-redux';
 import { logout } from '../actions/user';
@@ -12,7 +12,7 @@ class ItemIndexPage extends React.Component {
   render() {
     return (
       <div>
-        <UserNavbar />
+        <AppNavbar createButton deleteButton logoutButton />
         <h2>ItemIndexPage</h2>
         { this.props.user.displayName }
         <button onClick={() => this.props.logout()}>logout</button>
