@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Container, NavbarBrand, NavbarToggler, Button, Collapse, NavbarTogllerIcon } from 'reactstrap';
+import { Navbar, Container, NavbarBrand, NavbarToggler, Button, Collapse } from 'reactstrap';
 import { connect } from 'react-redux';
 
 const GuestNavbar = (props) => (
